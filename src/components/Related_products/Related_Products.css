@@ -1,0 +1,7 @@
+.related-products{
+    width: 90%;
+    margin: 2vw;
+    display: flex;
+    overflow-x: auto;
+    gap: 5vw;
+}

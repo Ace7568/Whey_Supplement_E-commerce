@@ -1,0 +1,49 @@
+.itemscard{
+    display: flex;
+    margin-top: 8vh;
+    align-items: center;
+    gap: 5vh;
+    width: 100%;
+    padding-left: 8vh;
+
+}
+
+.itemscard h2{
+    width: 40%;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.itemscard h2 button{
+    width: 8vw;
+    height: 4.5vh;
+    font-size: 1rem;
+    padding: 0.8vh;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 3vh;
+}
+
+.peanut_items{
+    display: flex;
+    gap: 10vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+}
+
+@media (max-width: 1250px){
+    .itemscard{
+        display: none;
+    }
+    
+}

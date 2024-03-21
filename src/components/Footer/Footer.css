@@ -1,0 +1,132 @@
+.footer{
+    display: flex;
+    gap: 10vh;
+    justify-content: space-around;
+    margin-top: 20vh;
+    background-color: #eaedf2;
+    padding-top: 10vh;
+}
+
+.footer h4{
+    margin-bottom: 4vh;
+    position: relative;
+}
+
+.footer h4::before{
+    content: "";
+    height: 4px;
+    width: 20%;
+    background-color: rgb(132, 127, 127);
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    bottom: -20%;
+}
+
+.footer .quick-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li{
+    margin-bottom: 2vh;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.footer ul li:hover{
+    color: blue;
+}
+
+.connect{
+    display: flex;
+    flex-direction: column;
+}
+
+.iconss{
+    display: flex;
+    gap: 2vw;
+    font-size: 2rem;
+}
+
+.iconss .ic{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.iconss .ic:hover{
+    transform: scale(1.2);
+}
+
+.payment{
+    background-color: #eaedf2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5vh;
+}
+
+.payment .payicon{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+}
+
+@media (max-width: 1250px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+        justify-content: space-around;
+        margin-top: 20vh;
+        background-color: #eaedf2;
+        padding-top: 10vh;
+    }
+
+    .footer h4{
+        margin: 4vh;
+        position: relative;
+    }
+
+    .footer ul li{
+        margin: 4vh;
+        cursor: pointer;
+        width: fit-content;
+    }
+    
+    .footer ul li:hover{
+        color: blue;
+    }
+
+    .iconss{
+        display: flex;
+        gap: 2vw;
+        font-size: 1.5rem;
+        margin-left: 4vh;
+        margin-bottom: 10vh;
+    }
+
+    .payment{
+        background-color: #eaedf2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 5vh;
+        font-size: 0.8rem;
+    }
+    
+    .payment .payicon{
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 10vh;
+    }
+}

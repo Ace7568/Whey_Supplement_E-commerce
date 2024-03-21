@@ -1,0 +1,136 @@
+.product-screen{
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left: 6vw;
+    gap: 8vh;
+}
+
+.product-section{
+    display: flex;
+    gap: 5vw;
+}
+
+.product-section .product-section-left{
+    display: flex;
+}
+
+.product-section .product-section-left img{
+    height: 60vh;
+}
+
+.product-section-left .small-images img{
+    height: 15vh;
+    object-fit: fill;
+    object-position: center;
+}
+
+.product-section-left .small-images{
+    display: flex;
+    flex-direction: column;
+    object-fit: fill;
+    object-position: center;
+}
+
+.product-section-right{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.product-section-right .star_icon img{
+    height: 2vh;
+}
+
+.product-section-right .price{
+    display: flex;
+    gap: 5vh;
+    align-items: center;
+    /* justify-content: center; */
+}
+.product-section-right .price .old-price{
+    text-decoration: line-through;
+    opacity: 60%;
+    display: flex;
+    align-items: center;
+}
+.product-section-right .price .new-price{
+    color: salmon;
+    font-weight: 900;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.product-section-right .product-disc{
+    font-size: 1.8vh;
+}
+
+.product-section-right .weights{
+    display: flex;
+    gap: 2vw;
+}
+
+.product-section-right .individual-weight{
+    height: 4vh;
+    width: 5vh;
+    font-size: 1.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4%;
+    border: 1px solid rgb(130, 126, 126);
+    transition: 0.3s;
+    cursor: pointer;
+    /* margin: 0; */
+}
+
+.product-section-right .individual-weight:hover{
+    background-color: salmon;
+    color: white;
+    border: none;
+}
+
+.product-section-right button{
+    height: 6vh;
+    width: 10vw;
+    border: none;
+    background-color: salmon;
+    color: white;
+}
+
+.product-section-right button:hover{
+    background-color: rgb(231, 133, 122);
+}
+
+@media (max-width: 1250px){
+    .product-section{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .product-section .product-section-left{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .product-section .product-section-left img{
+        height: 50vh;
+    }
+    
+    .product-section-left .small-images img{
+        height: 15vh;
+        object-fit: fill;
+        object-position: center;
+    }
+
+    .product-section-left .small-images{
+        display: flex;
+        flex-direction: row;
+        object-fit: fill;
+        object-position: center;
+    }
+}
